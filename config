@@ -200,4 +200,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status -c $HOME/.config/i3/i3status/config
+        # status_command i3blocks -c $HOME/.config/i3/i3blocks/config
+        # status_command i3blocks
 }
+# exec_always --no-startup-id $HOME/.config/i3/polybar.sh
+         # exec polybar main --configuratin $HOME/.config/i3/polybar/config
