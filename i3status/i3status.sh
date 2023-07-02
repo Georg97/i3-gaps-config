@@ -10,11 +10,7 @@ do
     elif [ "$output" = "0" ]; then 
         dark='light'
     fi
-    LG=$(setxkbmap -query | awk '/layout/{print $2}') 
-    VARIANT=$(setxkbmap -query | awk '/variant/{print $2}')
-    if [ -n "$VARIANT" ]; then
-        LG="$LG ($VARIANT)"
-    fi
+    LG=$(xkblayout-state print '%s')
     echo "LG: $LG | $dark theme  | $line" || exit 1
 done
 
