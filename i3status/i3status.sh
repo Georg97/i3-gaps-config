@@ -10,7 +10,7 @@ do
     elif [ "$output" = "0" ]; then 
         dark='light'
     fi
-    LG=$(xkblayout-state print '%s')
-    echo "LG: $LG | $dark theme  | $line" || exit 1
+    LG=$(xkblayout-state print '| %S| %s(%e)' | tr '\n' ' ')
+    echo "$LG | $dark theme  | $line" || exit 1
 done
 
