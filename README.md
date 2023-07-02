@@ -13,5 +13,5 @@ My config for my i3-gaps setup
 - i3-dmenu-desktop
 - feh
 - nm-applet
-- maim (for screenshots)
 - compton (transparent windows)
+- flameshot (for screenshots)
